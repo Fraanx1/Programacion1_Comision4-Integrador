@@ -76,7 +76,3 @@ Este trabajo fue desarrollado por:
 
   * **Franco Rios**
   * **Fabrizio Simon**
-
------
-
-¿Te gustaría que te ayude a desarrollar alguna de las secciones del informe teórico (como la explicación de Listas o Diccionarios) o a crear un ejemplo más detallado de la ejecución?
