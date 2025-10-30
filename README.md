@@ -1,5 +1,5 @@
  #🌍 Gestión de Datos de Países en Python**
-Este es el Trabajo Práctico Integrador (TPI) de la materia **Programación 1** de la Tecnicatura Universitaria en Programación a Distancia de la UTN.
+Este es el Trabajo Práctico Integrador (TPI) de **Programación 1** de la Tecnicatura Universitaria en Programación de la UTN.
 
 ### **✨ Descripción del Programa**
 
