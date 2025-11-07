@@ -76,3 +76,5 @@ Este trabajo fue desarrollado por:
 
   * **Franco Rios**
   * **Fabrizio Simon**
+
+Link del video: https://drive.google.com/file/d/1kXj6A9gH7CTLGU2eb5UPyc6rlOEKK6tc/view?usp=drive_link
