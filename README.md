@@ -1,76 +1,64 @@
-Gestión de Datos de Países en Python
 
-Este es el Trabajo Práctico Integrador (TPI) de Programación 1 de la Tecnicatura Universitaria en Programación de la UTN-FRM.
+```markdown
+# Gestión de Datos de Países en Python
 
-Integrantes del Equipo
+Este es el Trabajo Práctico Integrador (TPI) de **Programación 1** de la Tecnicatura Universitaria en Programación de la UTN-FRM.
 
-Franco Rios
+## Integrantes del Equipo
 
-Fabrizio Simon
+* **Franco Rios**
+* **Fabrizio Simon**
 
-Video de Demostración
+## Video de Demostración
 
 Para una demostración completa del funcionamiento del sistema (sin lectura de código), puede ver el siguiente video:
 
-[ENLACE A SU VIDEO AQUÍ] (Sugerencia: Súbanlo a YouTube como "No listado" o a Google Drive con enlace público)
+**[ENLACE A SU VIDEO AQUÍ]** *(Sugerencia: Súbanlo a YouTube como "No listado" o a Google Drive con enlace público)*
 
-Descripción del Programa
+## Descripción del Programa
 
 La aplicación es un sistema de gestión de información sobre países. Su objetivo principal es aplicar los conceptos de estructuras de datos (listas y diccionarios), modularización con funciones, y técnicas de filtrado, ordenamiento y estadísticas.
 
-El sistema lee los datos de los países desde un archivo paises.csv y ofrece un menú interactivo en consola para realizar diversas operaciones.
+El sistema lee los datos de los países desde un archivo `paises.csv` y ofrece un menú interactivo en consola para realizar diversas operaciones.
 
-Estructura de Datos
+### Estructura de Datos
 
 Cada país se representa como un diccionario con las siguientes claves:
 
-nombre (string)
+* `nombre` (string)
+* `poblacion` (int)
+* `superficie` (float)
+* `continente` (string)
 
-poblacion (int)
-
-superficie (float)
-
-continente (string)
-
-Funcionalidades Principales
+## Funcionalidades Principales
 
 El menú de opciones permite al usuario realizar las siguientes tareas:
 
-Cargar Datos: Lee el archivo paises.csv y carga los datos en memoria.
+1.  **Cargar Datos:** Lee el archivo `paises.csv` y carga los datos en memoria.
+2.  **Búsqueda:** Buscar un país por nombre (coincidencia parcial, insensible a mayúsculas y acentos).
+3.  **Filtros:**
+    * Por **Continente**.
+    * Por **Rango de Población** (mínimo y máximo).
+    * Por **Rango de Superficie** (mínimo y máximo).
+4.  **Ordenamiento:** Ordenar la lista de países por `Nombre`, `Población` o `Superficie` (ascendente o descendente).
+5.  **Estadísticas:** Calcular y mostrar:
+    * País con mayor y menor población/superficie.
+    * Promedio de población y superficie.
+    * Cantidad de países por continente.
+6.  **Mostrar Todos:** Imprime la lista completa de países cargados.
+7.  **Validaciones:** El programa incluye manejo de errores para entradas inválidas, búsquedas sin resultados y errores de formato en el CSV.
 
-Búsqueda: Buscar un país por nombre (coincidencia parcial, insensible a mayúsculas y acentos).
+## Instrucciones de Uso
 
-Filtros:
+### Requisitos
 
-Por Continente.
+* Python 3.x
 
-Por Rango de Población (mínimo y máximo).
-
-Por Rango de Superficie (mínimo y máximo).
-
-Ordenamiento: Ordenar la lista de países por Nombre, Población o Superficie (ascendente o descendente).
-
-Estadísticas: Calcular y mostrar:
-
-País con mayor y menor población/superficie.
-
-Promedio de población y superficie.
-
-Cantidad de países por continente.
-
-Mostrar Todos: Imprime la lista completa de países cargados.
-
-Validaciones: El programa incluye manejo de errores para entradas inválidas, búsquedas sin resultados y errores de formato en el CSV.
-
-Instrucciones de Uso
-
-Requisitos
-
-Python 3.x
-
-Archivos Necesarios
+### Archivos Necesarios
 
 Asegúrese de tener los siguientes archivos en la misma carpeta:
+
+```
 
 /Proyecto
 ├── main.py
@@ -78,24 +66,25 @@ Asegúrese de tener los siguientes archivos en la misma carpeta:
 ├── validaciones.py
 └── paises.csv
 
+````
 
-Ejecución
+### Ejecución
 
-Abra una terminal o línea de comandos.
+1.  Abra una terminal o línea de comandos.
+2.  Navegue hasta la carpeta del proyecto.
+3.  Ejecute el siguiente comando:
 
-Navegue hasta la carpeta del proyecto.
-
-Ejecute el siguiente comando:
-
+```bash
 python main.py
+````
 
+## Ejemplos de Entradas y Salidas
 
-Ejemplos de Entradas y Salidas
-
-Menú Principal
+### Menú Principal
 
 Al ejecutar el programa, se presentará el siguiente menú:
 
+```
 ╭─────────────────────────────────────────────────────╮
 │                                                     │
 │         GESTIÓN MUNDIAL DE PAÍSES              │
@@ -114,34 +103,35 @@ Al ejecutar el programa, se presentará el siguiente menú:
 │ [0] Salir del Programa                           │
 ╰─────────────────────────────────────────────────────╯
 ➡️  Seleccione una opción (0-8):
+```
 
+### Ejemplo 1: Cargar y Buscar
 
-Ejemplo 1: Cargar y Buscar
+1.  Usuario ingresa `1` (Cargar Datos).
+      * *Salida:* `Se cargaron 195 países exitosamente.`
+2.  Usuario ingresa `2` (Buscar por Nombre).
+      * *Entrada:* `Ingrese el nombre (o parte) del país a buscar: argen`
+      * *Salida:*
 
-Usuario ingresa 1 (Cargar Datos).
+<!-- end list -->
 
-Salida: Se cargaron 195 países exitosamente.
-
-Usuario ingresa 2 (Buscar por Nombre).
-
-Entrada: Ingrese el nombre (o parte) del país a buscar: argen
-
-Salida:
-
+```
 Resultados de la búsqueda:
 
 | Nombre                                   | Población (hab) | Superficie (km²) | Continente |
 |------------------------------------------|-----------------|------------------|------------|
 | Argentina                                |      45,376,763 |     2,780,400.00 | América    |
 ----------------------------------------------------------------------------------------------
+```
 
+### Ejemplo 2: Estadísticas
 
-Ejemplo 2: Estadísticas
+1.  Usuario ingresa `7` (Ver Estadísticas).
+      * *Salida:*
 
-Usuario ingresa 7 (Ver Estadísticas).
+<!-- end list -->
 
-Salida:
-
+```
 --- ESTADÍSTICAS GLOBALES ---
 Total de países cargados: 195
 ------------------------------
@@ -159,3 +149,7 @@ Cantidad de Países por Continente:
  - Asia: 48 países
  - Europa: 49 países
  - Oceanía: 9 países
+```
+
+```
+```
