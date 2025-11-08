@@ -1,5 +1,3 @@
-
-```markdown
 # Gestión de Datos de Países en Python
 
 Este es el Trabajo Práctico Integrador (TPI) de **Programación 1** de la Tecnicatura Universitaria en Programación de la UTN-FRM.
