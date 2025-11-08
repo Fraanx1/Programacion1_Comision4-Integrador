@@ -124,20 +124,20 @@ Al ejecutar el programa, se presentará el siguiente menú:
 ```
 ╭─────────────────────────────────────────────────────╮
 │                                                     │
-│         🌍 GESTIÓN MUNDIAL DE PAÍSES 🌍              │
+│         🌍 GESTIÓN MUNDIAL DE PAÍSES 🌍             │
 │               UTN - Programación 1                  │
 │                                                     │
 ├─────────────────────────────────────────────────────┤
-│ [1] 📥  Cargar Datos (CSV)                           │
-│ [2] 🔎  Buscar por Nombre                            │
-│ [3] 🌎  Filtrar por Continente                       │
-│ [4] 👥  Filtrar por Población                        │
-│ [5] 🗺   Filtrar por Superficie                      │
+│ [1] 📥  Cargar Datos (CSV)                          │
+│ [2] 🔎  Buscar por Nombre                           │
+│ [3] 🌎  Filtrar por Continente                      │
+│ [4] 👥  Filtrar por Población                       │
+│ [5] 🗺   Filtrar por Superficie                     │
 │ [6] 🔀  Ordenar Países                              │
-│ [7] 📊  Ver Estadísticas                             │
-│ [8] 📚  Mostrar Lista Completa                       │
+│ [7] 📊  Ver Estadísticas                            │
+│ [8] 📚  Mostrar Lista Completa                      │
 ├─────────────────────────────────────────────────────┤
-│ [0] ❌  Salir del Programa                           │
+│ [0] ❌  Salir del Programa                          │
 ╰─────────────────────────────────────────────────────╯
 ➡️  Seleccione una opción (0-8):
 ```
@@ -186,7 +186,3 @@ Al ejecutar el programa, se presentará el siguiente menú:
  - Asia: 48 países
  - Europa: 49 países
  - Oceanía: 9 países
-```
-
-```
-```
